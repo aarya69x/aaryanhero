@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("back.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-form {
+            background: black;
+            color: white;
+            padding: 40px;
+            width: 350px;
+            border-radius: 50px;
+            border: groove;
+            text-align: center;
+        }
+        .login-form h3 {
+            margin-bottom: 20px;
+            font-size: 29px;
+            font-family: cursive;
+        }
+        .login-form input {
+            width: 90%;
+            padding: 16px;
+            margin: 18px 0;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 100%;
+            background: orange;
+            border: none;
+            padding: 12px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .login-btn:hover {
+            color: black;
+            transition: 0.5s ease-out;
+            box-shadow: 0 0 100px white;
+        }
+        .login-form p {
+            margin-top: 50px;
+            font-size: large;
+        }
+        .login-form a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: large;
+        }
+        .login-form a:hover {
+            color: red;
+            transition: 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h3>Forgot Password?</h3>
+        <form action="home.html" method="GET">
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required>
+            <button class="login-btn" type="submit">RESET PASSWORD</button>
+        </form>
+        <p>OR<br>
+            REMEMBER YOUR  PASSWORD?<br>
+            <a href="loginpage.html">CLICK HERE</a>
+        </p>
+    </div>
+</body>
+</html>

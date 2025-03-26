@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design & Development</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("back.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: black;
+            flex-wrap: wrap;
+        }
+        .logo {
+            text-shadow: 0 0 5px #ff9100, 0 0 10px #ff9100, 0 0 15px #ff8000;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+        nav {
+            flex: 1; 
+            display: flex;
+            justify-content: center; 
+        }
+        nav ul {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: orange;
+            transition: 0.5s ease-out;
+            text-shadow: 0 0 15px black,0 0 40px red,0 0 20px white;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .content {
+            max-width: auto;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: red;
+        }
+        .content pre {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .join-btn {
+            background: orange;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .join-btn:hover {
+            color:black;
+            opacity:0.7;
+            transition: 0.5s ease-out;
+        }
+        .login-form {
+            color: white;
+            padding: 20px;
+            width: 100%;
+            max-width: 380px;
+            border: 5px solid white;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+        .login-form h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color:white;
+            text-shadow: 0 0 5px red,0 0 20px black;
+            font-family: cursive;
+        }
+        .extrakura {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+        .extrakura a {
+            color: orange;
+            text-shadow: 0 0 15px black,0 0 20px white;
+            text-decoration: none;
+        }
+        .extrakura a:hover {
+            color: red;
+            transition: 0.5s ease-out;
+        }
+        .login-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .login-btn {
+            width: 95%;
+            background: orange;
+            border: none;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border:groove;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .login-btn:hover {
+            color:black;
+            opacity:0.7;
+            transition: 0.5s ease-out;
+            box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+        }
+        .social a{
+            font-size: 20px;
+        }
+        .fa {
+         padding: 20px;
+         font-size: 30px;
+         width: 30px;
+         text-align: center;
+         text-decoration: none;
+         display: flex;
+         gap:400px;
+         box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+        }
+        .fa:hover {
+         opacity: 0.6;
+  
+        }
+        .fa-facebook {
+          background:orange;
+          color: white;
+          display: flex;
+          border:groove;
+          border-radius: 50px;
+        }
+        .fa-instagram {
+         background: orange;
+         color: white;
+         display: flex;
+         border:groove;
+         border-radius: 50px;
+        }
+        .fa-twitter {
+          background: orange;
+          color: white;
+          display: flex;
+          border:groove;
+          border-radius: 50px;
+        }  
+
+        @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        align-items: center;
+        padding: 0;
+        margin: 12px 0;
+    }
+    .main {
+        padding: 20px;
+    }
+    .content h2 {
+        font-size: 28px;
+    }
+    .login-form {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">AARYAN</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <marquee behavior="scroll" direction="left" style="color: red; font-size: 20px; font-weight: bold;">Website not fully completed | Welcome! Welcome! | K xa Hajur........Sachai hunu hunxa?</marquee>
+    <section class="main">
+        <div class="content">
+            <h2>LOGIN PAGE</h2>
+            <pre>
+PROJECT WORK
+I'am a beginner working on this project.
+The Login will not work.
+            </pre>
+        </div>
+        
+        <div class="login-form">
+            <h3>Login Here</h3>
+            <form action="login.html" method="POST">
+                <input type="email" id="email" name="email" placeholder="Enter Email Here" required>
+                <input type="password" id="password" name="password" placeholder="Enter Password Here" required>
+                <button class="login-btn" type="submit">Login</button>
+            </form>
+            <div class="social">
+                <h3>OR</h3>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+             </div>
+             <div class="extrakura">
+            
+            <p>Don't have an account? <a href="signup.html">Sign up</a> here</p>
+           <a href="forgotpw.html">Forgot Password?</a>
+             </div>
+        </div>
+    </section>
+</body>
+</html>

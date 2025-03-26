@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: url("back.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background: black;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .logo{
+            text-shadow: 0 0 5px #ff9100, 0 0 10px #ff9100, 0 0 15px #ff8000;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+        nav ul {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .aboutbuttoncolorgarne {
+            color: red;
+            font-size: larger;
+            text-shadow: 0 0 15px orange, 0 0 10px red, 0 0 20px red;
+        }
+        nav ul li a:hover {
+            color: orange;
+            transition: 0.5s ease-out;
+        }
+        .logingarne button{
+            background: orange;
+            border: none;
+            padding: 8px 15px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .search-box button {
+            background: orange;
+            border: none;
+            padding: 8px 15px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-family: cursive;
+            font-size: 40px;
+            color: red;
+        }
+        .content span {
+            color: orange;
+        }
+        .content pre {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .logingarne button{
+                margin-top: 10px;
+            }
+            .search-box {
+                margin-top: 10px;
+            }
+            .content h2 {
+                font-size: 30px;
+            }
+            .content pre {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">AARYAN</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <div class="aboutbuttoncolorgarne">
+                    <li><a href="about.html">ABOUT</a></li>
+            </div>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="logingarne">
+           <a href="loginpage.html"><button> LOGIN</button></a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Type To text">
+            <button>Search</button>
+        </div>
+    </header>
+    <marquee behavior="scroll" direction="left" style="color: red; font-size: 20px; font-weight: bold;">Website not fully completed | Welcome! Welcome! | This is About Page | K xa Hajur........Sachai hunu hunxa?</marquee>
+    
+    <section class="main">
+        <div class="content">
+            <h2>SAWADIKA!<br><span>This is ABOUT PAGE</span></h2>
+            <pre>
+This is a project work given by Sanjay Sir.
+This was developed when learning
+ web design and development.
+Later I continued to add more elements.
+I'm a beginner working on this project.
+I'll soon add contents.
+            </pre>
+        </div>
+    </section>
+</body>
+</html>
